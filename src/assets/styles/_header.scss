@@ -1,0 +1,25 @@
+header {
+    @include flexCenter();
+    width: $full;
+    background: $headerGradient #B2B6B3;
+}
+
+header, header * {
+    color: $fontColourLight;
+    text-transform: uppercase;
+}
+
+.headerWrapper {
+    height: 100vh;
+    justify-content: center;
+}
+
+.headerWrapper h1 {
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+.headerWrapper h3 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}

@@ -1,0 +1,15 @@
+// Removes all list styles, margin and padding
+@mixin ulReset() {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+// Centers children vertically and horizontally using flex
+@mixin flexCenter() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

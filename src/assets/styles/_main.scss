@@ -1,0 +1,115 @@
+html {
+    font-family: $openSans;
+}
+    
+body {
+    background: $brandPrimary;
+}
+    
+h1, h2, h3, h4, h5 {
+    color: $fontColourDark;
+}
+
+a, p, li {
+    color: $fontColour;
+}
+
+a { 
+    text-decoration: none;
+}
+
+a:hover {
+    color: $brandAccent;
+}
+
+p {
+    line-height: 1.6rem;
+}
+    
+section {    
+    @include flexCenter();
+    width: $full;
+    padding: 6rem 0;
+}
+
+.wrapper {
+    @include flexCenter();
+    width: $wrapperWidth;
+}
+
+.column {
+    flex-direction: column;
+}
+    
+.h1Wrapper {
+    border-left: 5px solid $brandAccent;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}
+    
+.h1Wrapper h1, .h1Wrapper h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.h1Wrapper h1 {
+    color: $fontColourDark;
+}
+    
+.h1Wrapper h4 {
+    font-weight: 400;
+    color: $fontColour;
+}
+
+.h3Wrapper {
+    padding-left: 1rem;
+}
+    
+.h3Wrapper h3, .h3Wrapper h4 {
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+.h3Wrapper h3 {
+    color: $fontColourLight;
+}
+    
+.h3Wrapper h4 {
+    font-weight: 400;
+    color: $fontColourDim;
+}
+
+button {
+    border: none;
+    padding: 0 2rem;
+    color: $buttonColorHeader;
+    background: $buttonColor;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    vertical-align: middle;
+    height: 4rem;
+    margin: 0.25rem;
+    text-transform: uppercase;
+}
+
+.buttonHollow {
+    background: none;
+    border: 2px solid $buttonColorHeader;
+}
+
+.buttonSolid {
+    background: $buttonColorHeader;
+    color: $buttonColor;
+}
+
+.buttonForm {
+
+}
+
+.buttonEmail {
+
+}
+
+.badge {
+    width: 50px;
+}  

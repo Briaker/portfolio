@@ -1,0 +1,21 @@
+footer {
+    margin-top: 6rem;
+    height: 200px;
+    @include flexCenter();
+    flex-direction: column;
+}
+
+.socialMediaWrapper {
+    @include ulReset();
+}
+
+.socialMedia li {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0 0.3rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.socialMedia li:hover {
+    transform: scale(1.3);
+}

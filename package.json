@@ -1,7 +1,7 @@
 {
-  "name": "react-boiler",
-  "version": "1.1.0",
-  "description": "React project boilerplate",
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "Personal Protfolio",
   "author": "Brian Baker",
   "license": "ISC",
   "devDependencies": {
@@ -20,8 +20,6 @@
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.1.2",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   }

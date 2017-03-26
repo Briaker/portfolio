@@ -1,12 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React Boilerplate</title>
-    <link rel="stylesheet" href="assets/styles/style.css">
-</head>
-<body>
-    <div id="app"></div>
-    <script src="assets/js/app.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Raleway:200,400,800|PT+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="icon" type="image/png" href="assets/images/favicon.png?v=2">
+        <link type="text/css" rel="stylesheet" href="assets/styles/style.css">
+        <title>Brian Baker</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="wrapper column headerWrapper">
+                <h3>Fullstack Developer</h3>
+                <h1>Brian Baker</h1>
+                <div class="headerButtonWrapper">
+                    <button class="buttonHollow" id="readMoreButton">Read More</button>
+                    <button class="buttonSolid emailMeButton">Email Me</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="aboutMe column" id="aboutMe">
+                <div class="whoIAm">
+                    <div class="content">
+                        <div class="contentInner">
+                            <div class="h1Wrapper">
+                                <h4>Driven By Code</h4>
+                                <h1>Who I Am</h1>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, temporibus dignissimos. Explicabo minus ad similique. Corporis delectus, blanditiis hic maxime est fugit, modi ad sapiente, esse inventore dicta soluta impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus sint repellat nesciunt eius libero reprehenderit tempora officia quos vitae sequi, sit ratione harum dolorem recusandae neque, quas velit. At, excepturi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="content">
+                         <div class="contentInner">
+                            <div class="h1Wrapper">
+                                <h4>Driven By Code</h4>
+                                <h1>1337 SKILZ</h1>
+                            </div>
+                            <p>expert</p>
+                            <p>proficient</p>
+                            <p>learning</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, temporibus dignissimos. Explicabo minus ad similique. Corporis delectus, blanditiis hic maxime est fugit, modi ad sapiente, esse inventore dicta soluta impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus sint repellat nesciunt eius libero reprehenderit tempora officia quos vitae sequi, sit ratione harum dolorem recusandae neque, quas velit. At, excepturi.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services" id="services">
+                <div class="wrapper column servicesWrapper">
+                    <div class="h1Wrapper">
+                        <h4>Stuff I'm Good At</h4>
+                        <h1>What I Do</h1>
+                    </div>
+                    <div class="servicesInner">
+                        <div class="service">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                            <h4>Frontend Development</h4>
+                            <p>I deliver products that are supported cross-browser and cross-platform.</p>
+                        </div>
+
+                        <div class="service">
+                            <div class="responsiveIconsWrapper">
+                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                <i class="fa fa-tablet" aria-hidden="true"></i>
+                            </div>
+                            <h4>Responive Design</h4>
+                            <p>All of my products are designed to be flexible and to adapt to any screen.</p>
+                        </div>
+
+                        <div class="service">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                            <h4>Backend Development</h4>
+                            <p>I build and integrate content manament systems, databses, and APIs.</p>
+                        </div>
+
+                        <div class="service">
+                            <i class="fa fa-database" aria-hidden="true"></i>
+                            <h4>System Administaion</h4>
+                            <p>I manage web servers with automated build scripts and web hooks.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="portfolio" id="portfolio">
+                <div class="wrapper column">
+
+                    <div class="portfolioTop">
+                        <div class="h1Wrapper">
+                            <h4>Stuff I Made</h4>
+                            <h1>My Portfolio</h1>
+                        </div>
+<!--                         <ul class="nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul> -->
+                    </div>
+
+                    <div class="portfolioMiddle">
+                        <div class="portfolioItem colourSchemer">
+                            <div class="portfolioItemInfo">
+                                <div class="h3Wrapper">
+                                    <h3>Colour Schemer</h3>
+                                    <h4>React, Firebase, Responsive</h4>
+                                </div>
+                            </div>
+                            <a href="https://colourSchemer.brianbaker.ca/"></a>
+                        </div>
+
+                        <div class="portfolioItem birdFinder">
+                            <div class="portfolioItemInfo">
+                                <div class="h3Wrapper">
+                                    <h3>Bird Finder</h3>
+                                    <h4>JavaScript, PetFinder API, Responsive</h4>
+                                </div>
+                            </div>
+                            <a href="https://birdfinder.brianbaker.ca/"></a>
+                        </div>
+
+                        <div class="portfolioItem catchARide">
+                            <div class="portfolioItemInfo">
+                                <div class="h3Wrapper">
+                                    <h3>Catch A Ride</h3>
+                                    <h4>JavaScript, Multiple APIs, Responsive</h4>
+                                </div>
+                            </div>
+                            <a href="https://catcharide.brianbaker.ca/"></a>
+                        </div>
+
+                        <div class="portfolioItem spaceRace">
+                            <div class="portfolioItemInfo">
+                                <div class="h3Wrapper">
+                                    <h3>Space Race</h3>
+                                    <h4>JavaScript, Paired Programming [Michelle Co.], Responsive</h4>
+                                </div>
+                            </div>
+                            <a href="https://spacerace.brianbaker.ca/"></a>
+                        </div>
+
+                        <div class="portfolioItem mercy">
+                            <div class="portfolioItemInfo">
+                                <div class="h3Wrapper">
+                                    <h3>Mercy Heart Charity</h3>
+                                    <h4>HTML/CSS, jQuery, Responsive</h4>
+                                </div>
+                            </div>
+                            <a href="https://mercy.brianbaker.ca/"></a>
+                        </div>
+
+                        <div class="portfolioItem chilli">
+                            <div class="portfolioItemInfo">
+                                <div class="h3Wrapper">
+                                    <h3>Chilli Restauraunt</h3>
+                                    <h4>HTML/CSS</h4>
+                                </div>
+                            </div>
+                            <a href="https://chilli.brianbaker.ca/"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<!--             <section class="clients">
+                clients
+            </section>
+
+            <section class="email">
+                email
+            </section> -->
+
+            <!-- <section class="contact">
+                
+            </section> -->
+        </main>
+        <footer id="contact">
+            <!-- <img class="badge" src="assets/images/snob-approved.png" alt=""> -->
+            <button class="emailMeButton">Email Me</button>
+            <div class="socialMediaWrapper">
+                <ul class="socialMedia">
+                    <!-- <li><a href="mailto:mail@brianbaker.ca"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li> -->
+                    <li><a href="https://twitter.com/brian_codes"><i class="fa fa-twitter" aria-hidden="true"></i> </a></li>
+                    <li><a href="https://www.linkedin.com/in/brian-baker-8a0783123/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/Briaker"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->

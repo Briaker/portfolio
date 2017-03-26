@@ -1,0 +1,107 @@
+.portfolio {
+    @include flexCenter();
+    align-items: flex-start;
+    min-height: $wrapperWidth;
+    padding: 0;
+    padding-top: 2rem;
+}
+
+.portfolioTop {
+    @include flexCenter();
+    justify-content: space-between;
+    width: 100%;
+}
+
+.portfolioMiddle {
+    @include flexCenter();
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+    
+.portfolioItem {
+    width: calc(33.3% - 20px + (20px / 3));
+    background: $brandSecondaryDark;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    transition: box-shadow 0.2s ease-in-out;
+    // box-shadow: 0px 0px 20px 0px rgba(100,100,100,0.4);
+}
+    
+.portfolioItem:first-of-type {
+    width: calc((66.6% - 10px + (10px / 2)) - 1px);
+}
+    
+.portfolioItem:nth-of-type(3n+2) {
+    margin-right: 0;
+}
+    
+.portfolioItem a {
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.portfolioItemInfo {
+    opacity: 0;
+    background: rgba(78,123,135,0.85);
+    padding: 2rem;
+    width: 100%;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.portfolioItem:hover {
+    box-shadow: 0px 0px 20px 0px rgba(100,100,100,0.4);
+}
+
+.portfolioItem:hover .portfolioItemInfo {
+    opacity: 1;
+}
+    
+.mercy {
+    background: url("../images/mercy.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.chilli {
+    background: url("../images/chilli.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.spaceRace {
+    background: url("../images/space.jpg");
+    background-size: cover;
+    background-position: right center;
+}
+        
+.catchARide {
+    background: url("../images/ride.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.birdFinder {
+    background: url("../images/petfinder.jpg");
+    background-size: cover;
+    background-position: left center;
+}
+
+.colourSchemer {
+    background: url("../images/schemer.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.portfolioBottom {
+    text-align: center;
+}
