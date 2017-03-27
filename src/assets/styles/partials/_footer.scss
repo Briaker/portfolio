@@ -1,5 +1,5 @@
 footer {
-    margin-top: 6rem;
+    margin: 4rem 0;
     height: 200px;
     @include flexCenter();
     flex-direction: column;
@@ -7,6 +7,7 @@ footer {
 
 .socialMediaWrapper {
     @include ulReset();
+    margin-top: 2rem;
 }
 
 .socialMedia li {

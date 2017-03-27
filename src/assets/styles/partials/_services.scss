@@ -16,6 +16,8 @@
     background: $brandSecondary;
     transition: all 0.2s ease-in-out;
     text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px 0px rgba(175,175,175,0.4);
 }
 
 .service h4, .service i {
@@ -43,9 +45,11 @@
 .responsiveIconsWrapper {
     position: relative;
 }
+
 .responsiveIconsWrapper .fa-tablet { 
     font-size: 3rem;
 }
+
 .responsiveIconsWrapper .fa-mobile {
     background: $brandSecondary;
     line-height: 2rem;

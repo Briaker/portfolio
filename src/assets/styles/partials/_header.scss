@@ -1,0 +1,40 @@
+header {
+    @include flexCenter();
+    width: $full;
+    background: $headerGradient;
+}
+
+header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../images/desk.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+
+header, header * {
+    color: $fontColourLight;
+    text-transform: uppercase;
+}
+
+.headerWrapper {
+    height: 100vh;
+    justify-content: center;
+}
+
+.headerWrapper h1 {
+    font-size: 4rem;
+    margin-top: 0;
+    letter-spacing: 0.3rem;
+}
+
+.headerWrapper h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    letter-spacing: 0.4rem;
+    font-weight: 100;
+}

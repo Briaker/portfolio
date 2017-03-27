@@ -2,8 +2,6 @@
     @include flexCenter();
     align-items: flex-start;
     min-height: $wrapperWidth;
-    padding: 0;
-    padding-top: 2rem;
 }
 
 .portfolioTop {
@@ -29,7 +27,6 @@
     align-items: flex-end;
     position: relative;
     transition: box-shadow 0.2s ease-in-out;
-    // box-shadow: 0px 0px 20px 0px rgba(100,100,100,0.4);
 }
     
 .portfolioItem:first-of-type {
@@ -51,55 +48,50 @@
 }
 
 .portfolioItemInfo {
-    opacity: 0;
-    background: rgba(78,123,135,0.85);
-    padding: 2rem;
+    background: rgba(78,123,135,1);
+    padding: 1.2rem;
     width: 100%;
     transition: opacity 0.2s ease-in-out;
 }
 
-.portfolioItem:hover {
+.portfolioItem:hover, .portfolioItem:focus {
     box-shadow: 0px 0px 20px 0px rgba(100,100,100,0.4);
 }
 
-.portfolioItem:hover .portfolioItemInfo {
-    opacity: 1;
-}
-    
 .mercy {
     background: url("../images/mercy.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
 }
 
 .chilli {
     background: url("../images/chilli.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
 }
 
 .spaceRace {
     background: url("../images/space.jpg");
     background-size: cover;
-    background-position: right center;
+    background-position: right top;
 }
         
 .catchARide {
     background: url("../images/ride.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
 }
 
 .birdFinder {
     background: url("../images/petfinder.jpg");
     background-size: cover;
-    background-position: left center;
+    background-position: left top;
 }
 
 .colourSchemer {
     background: url("../images/schemer.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: left top;
 }
 
 .portfolioBottom {

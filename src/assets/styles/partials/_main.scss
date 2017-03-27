@@ -29,7 +29,8 @@ p {
 section {    
     @include flexCenter();
     width: $full;
-    padding: 6rem 0;
+    padding: 0;
+    padding-top: 6rem;
 }
 
 .wrapper {
@@ -59,6 +60,7 @@ section {
 .h1Wrapper h4 {
     font-weight: 400;
     color: $fontColour;
+    letter-spacing: 0.1rem;
 }
 
 .h3Wrapper {

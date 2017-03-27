@@ -1,0 +1,56 @@
+.aboutMe {
+    flex-wrap: wrap;
+    background: url('../images/green_cup.png') $brandSecondaryDark;
+    padding: 0;
+}
+
+.whoIAm, .skills {
+    width: $full;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.whoIAm {
+    position: relative;
+}
+
+.whoIAm .content, .skills .content, .keyboard, .me {
+    @include flexCenter();
+    width: 50%;
+    height: 650px;
+    background: $brandPrimary;
+    justify-content: flex-start;
+}
+
+.keyboard {
+    background: url('../images/keyboard.jpg');
+    background-size: cover;
+}
+
+.me {
+    background: url('../images/me.jpg');
+    background-size: cover;
+}
+
+.secret:hover + .me {
+    background: url('../images/me2.jpg');
+    background-size: cover;
+}
+
+.secret {
+    width: 75px;
+    height: 75px;
+    // background: red;
+    position: absolute;
+    right: 25%;
+    top: 45%;
+    transform: translateX(50%);
+}
+
+.skills .content {
+    background: $brandSecondary;
+}
+
+.whoIAm .contentInner, .skills .contentInner {
+    padding: 8rem;
+}

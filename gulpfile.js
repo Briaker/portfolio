@@ -45,7 +45,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('es6-dev', () => {
-    return browserify('./src/app.js', { debug: true })
+    return browserify('./src/assets/js/main.js', { debug: true })
     .transform('babelify', {
         sourceMaps: true,
         presets: [
@@ -59,9 +59,8 @@ gulp.task('es6-dev', () => {
         message: "Error: <%= error.message %>",
         title: 'Error in JS 💀'
     }))
-    .pipe(source('app.js'))
+    .pipe(source('main.js'))
     .pipe(buffer())
-    .pipe(uglify())
     .pipe(gulp.dest('./dist/assets/js'))
     .pipe(reload({stream: true}));
 });

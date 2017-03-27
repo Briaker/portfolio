@@ -1,0 +1,101 @@
+#tabs h2 {
+    margin: 1rem 0 0;
+}
+
+.tabsList {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    padding-top: 0rem;
+}
+
+.tabsList li {
+    position: relative; /*for z-index*/
+    float: left;
+    margin: 0 0.5rem 0 0;
+    z-index: 1;
+}
+
+.tabsList li a {
+    position: relative;
+    top: 4px;
+    overflow: hidden;
+    color: #444;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.5rem 0.35rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.tabsList li a:link { border-color: #ccc; }
+
+.tabsList li a:hover,
+.tabsList li a:focus,
+.tabsList li a:active {
+    color: $brandAccent;
+}
+
+.tabsList li a:active { top: 2px; }
+
+.tabsList li.current a {
+    top: 2px;
+    font-weight: bold;
+    border-bottom: 2px solid $brandAccent;
+    color: #333;
+}
+
+// .tabsList li.current a:hover,
+.tabsList li.current a:focus {
+    color: #333;
+}
+
+.tabsList li.current a:focus { outline: 1px dotted #444; }
+
+// .tabsList a span {
+//     position: absolute;
+//     top: auto;
+//     width: 1px;
+//     height: 1px;
+//     overflow: hidden;
+//     opacity: 0;
+// }
+
+.tabPanelWrapper {
+    position: relative;  /*for z-index*/
+    display: block;
+    visibility: visible;
+    clear: left;
+    overflow: hidden;
+    padding: 0 2rem;
+    // border: 2px solid #999;
+    z-index: 5;
+    color: #333;
+    // background-color: #fafafa;
+    height: 20rem;
+    width: 500px;
+    margin: 0;
+}
+
+.tabPanelInnerWrapper {
+    width: 2700px;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.6s ease-in-out;
+}
+
+.tabPanel {
+    position: relative;
+    display: inline-block;
+    visibility: visible;
+    overflow: hidden;
+    padding: 0 2rem;
+    width: 500px;
+    height: 20rem;
+}
+
+.tabPanel:focus { outline: 1px dotted #999; }
+
+.tabPanel p:focus { outline: 1px dotted #999; }
