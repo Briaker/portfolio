@@ -66,7 +66,7 @@ gulp.task('es6-dev', () => {
 });
 
 gulp.task('es6', () => {
-    return browserify('./src/main.js')
+    return browserify('./src/assets/js/main.js')
     .transform('babelify', {
         presets: [
             'es2015', 
