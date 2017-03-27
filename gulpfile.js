@@ -66,7 +66,7 @@ gulp.task('es6-dev', () => {
 });
 
 gulp.task('es6', () => {
-    return browserify('./src/app.js')
+    return browserify('./src/main.js')
     .transform('babelify', {
         presets: [
             'es2015', 
@@ -79,7 +79,7 @@ gulp.task('es6', () => {
         message: "Error: <%= error.message %>",
         title: 'Error in JS 💀'
     }))
-    .pipe(source('app.js'))
+    .pipe(source('main.js'))
     .pipe(buffer())
     .pipe(uglify())
     .pipe(gulp.dest('./dist/assets/js'))
