@@ -13,7 +13,7 @@ $(function() {
         "aria-hidden": "true"
     });
 
-    const tabPanels = $(tabPanelInnerWrapper).find("div").attr({
+    const tabPanels = $(tabPanelInnerWrapper).children("div").attr({
         "class": "tabPanel",
         "aria-hidden": "true"
     });

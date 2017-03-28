@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 html {
     font-family: $openSans;
 }
@@ -92,24 +96,34 @@ button {
     height: 4rem;
     margin: 0.25rem;
     text-transform: uppercase;
+    border-radius: 4px;
 }
 
-.buttonHollow {
-    background: none;
+button:hover, button:active {
+    background: $buttonColorHover;
+}
+
+.buttonHollow, .buttonSolid {
+    border-radius: 0;
     border: 2px solid $buttonColorHeader;
 }
 
+.buttonHollow {
+    background: rgba(255,255,255,0);
+}
+
+.buttonHollow:hover, .buttonHollow:active {
+    background: rgba(255,255,255,0.1);
+}
+
 .buttonSolid {
+    background: rgba(255,255,255,1);
     background: $buttonColorHeader;
     color: $buttonColor;
 }
 
-.buttonForm {
-
-}
-
-.buttonEmail {
-
+.buttonSolid:hover, .buttonSolid:active {
+    background: rgba(255,255,255,0.8);
 }
 
 .badge {

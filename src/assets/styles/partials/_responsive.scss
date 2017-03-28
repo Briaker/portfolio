@@ -9,7 +9,11 @@
         padding-left: 2rem;
         padding-right: 2rem;
     }
-
+    
+    .keyboard, .me, .secret {
+        display: none;
+    }
+    
     .whoIAm .contentInner, .skills .contentInner {
         padding: 2rem;
     }
@@ -41,6 +45,8 @@
 }
 
 @media screen and (max-width: 767px) {
+    
+
     .service, .service:not(:last-of-type), .service:nth-of-type(odd) {
         width: calc(100% - 2rem);
         margin: 0;
