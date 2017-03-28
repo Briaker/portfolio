@@ -80,9 +80,13 @@
     display: inline-block;
     visibility: visible;
     overflow: hidden;
-    padding: 0 2rem;
+    padding: 0rem;
     width: 500px;
     height: 20rem;
+}
+
+.tabContent {
+    width: 100%;
 }
 
 .tabPanel:focus { outline: 1px dotted #999; }
