@@ -85,7 +85,7 @@ section {
     color: $fontColourDim;
 }
 
-button {
+button, .emailMeButton {
     border: none;
     padding: 0 2rem;
     color: $buttonColorHeader;
@@ -99,7 +99,15 @@ button {
     border-radius: 4px;
 }
 
-button:hover, button:active {
+.emailMeButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $buttonColorHeader;
+}
+
+button:hover, button:active, .emailMeButton:hover, .emailMeButton:active  {
+    color: $buttonColorHeader;
     background: $buttonColorHover;
 }
 
@@ -116,13 +124,13 @@ button:hover, button:active {
     background: rgba(255,255,255,0.1);
 }
 
-.buttonSolid {
+.emailMeButton.buttonSolid {
     background: rgba(255,255,255,1);
     background: $buttonColorHeader;
     color: $buttonColor;
 }
 
-.buttonSolid:hover, .buttonSolid:active {
+.emailMeButton.buttonSolid:hover, .emailMeButton.buttonSolid:active {
     background: rgba(255,255,255,0.8);
 }
 

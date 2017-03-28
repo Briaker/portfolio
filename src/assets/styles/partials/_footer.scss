@@ -8,6 +8,12 @@ footer {
 .socialMediaWrapper {
     @include ulReset();
     margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
 }
 
 .socialMedia li {
