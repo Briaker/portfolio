@@ -85,7 +85,7 @@ section {
     color: $fontColourDim;
 }
 
-button, .emailMeButton {
+button, .emailMeButton, .linkButton {
     border: none;
     padding: 0 2rem;
     color: $buttonColorHeader;
@@ -96,17 +96,17 @@ button, .emailMeButton {
     height: 4rem;
     margin: 0.25rem;
     text-transform: uppercase;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
-.emailMeButton {
+.emailMeButton, .linkButton {
     display: flex;
     align-items: center;
     justify-content: center;
     color: $buttonColorHeader;
 }
 
-button:hover, button:active, .emailMeButton:hover, .emailMeButton:active  {
+button:hover, button:active, .emailMeButton:hover, .emailMeButton:active, .linkButton:hover, .linkButton:active  {
     color: $buttonColorHeader;
     background: $buttonColorHover;
 }

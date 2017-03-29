@@ -44,3 +44,8 @@ header, header * {
     letter-spacing: 0.4rem;
     font-weight: 100;
 }
+
+.headerButtonsWrapper {
+    display: flex;
+    flex-wrap: no-wrap;
+}

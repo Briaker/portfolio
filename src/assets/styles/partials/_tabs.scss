@@ -13,7 +13,7 @@
 .tabsList li {
     position: relative; /*for z-index*/
     float: left;
-    margin: 0 0.5rem 0 0;
+    margin: 0 2rem 0 0;
     z-index: 1;
 }
 
@@ -26,6 +26,7 @@
     margin: 0.5rem 0;
     cursor: pointer;
     font-size: 1.2rem;
+    border-bottom: 2px solid $brandAccent;
 }
 
 .tabsList li a:link { border-color: #ccc; }
