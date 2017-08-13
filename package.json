@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "Personal Protfolio",
   "author": "Brian Baker",
-  "license": "ISC",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "gulp run build"
+  },
   "devDependencies": {
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-react": "^6.23.0",
